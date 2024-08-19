@@ -1,0 +1,117 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px !important;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 30px;
+}
+.main_heading{
+    text-align: center;
+}
+.quantity__input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+.add__btn, .download_btn{
+    display: flex;
+    justify-content: center;
+}
+.add__btn button, .avg__btn button, .download_btn button{
+    margin-right: 0 !important;
+}
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+}
+.main_heading{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 0px !important;
+}
+.quantity__count p, .total__sum p , .avg__result p{
+    font-size: 18px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+.avg__result p{
+    margin-bottom: 20PX !important;
+}
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+#quantityTable th{
+    font-weight: 500;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+#quantityTable  td button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+#quantityTable  td button:last-child{
+    margin-right: 0 !important;
+}
+td button:hover {
+    background-color: #c82333;
+}
+
+header h3{
+    font-size: 35px;
+    margin: 0;
+    padding: 20px 0;
+    color: #ffffff;
+    text-align: center;
+}
+header{
+    background-color: #382020;
+}
+@media only screen and (min-width: 700px){
+    .container {
+        max-width: 550px;
+        margin: 0 auto;
+        margin-bottom: 50px !important;
+    }
+}

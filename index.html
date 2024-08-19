@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3>SOR LEATHER</h3>
+    </header>
+    <section>
+        <div class="container">
+            <h1 class="main_heading">Quantity Tracker</h1>
+            <div class="quantity__input">
+                <input type="number" id="quantityInput" placeholder="Enter quantity Like (4.1, 4.2, 4.3)" step="0.1">
+                <div class="add__btn"><button id="addQuantity">Add Quantity</button></div>
+                
+            </div>
+            <div class="quantity__count"><p id="quantityCount">Total Quantities: 0</p></div>
+            <div>
+                <table id="quantityTable">
+                    <thead>
+                        <tr>
+                            <th>Quantity</th>
+                            <th>Value</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="total__sum"><p id="quantitySum">Sum: 0.00</p></div>
+            <div class="avg__btn"><button id="calculateAverage">Calculate Average</button></div>        
+            <div class="avg__result"><p id="averageResult"></p></div>
+            <div class="download_btn"><button id="downloadRecord">Download Record</button></div>
+            
+
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
